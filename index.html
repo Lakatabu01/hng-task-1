@@ -13,7 +13,7 @@
                 <img
                 class="display-picture"
                 data-testid="slackDisplayImage"
-                sizes="(max-width: 1400px) 20vw, (max-width: 728px) 70vw"
+                sizes="(max-width: 728px) 50vw, (max-width: 1400px) 20vw"
                 srcset="
                 ./Assets/profile-image/profile-image_kum8r3_c_scale,w_190.jpg 190w,
                 ./Assets/profile-image/profile-image_kum8r3_c_scale,w_288.jpg 288w"
@@ -32,10 +32,14 @@
 
                 <div class="time-div">
                     <div class="time">
-                        <p data-testid="currentDayOfTheWeek">Current day of the week:</p>
+                        <p
+                        class="week-day" 
+                        data-testid="currentDayOfTheWeek"></p>
                     </div>
-                    <div class="time">
-                        <p data-testid="currentUTCTime">Current time:</p>
+                    <div class="time second">
+                        <p 
+                        class="timer "
+                        data-testid="currentUTCTime"></p>
                     </div>
                 </div>
 
@@ -47,5 +51,7 @@
             </div>
         </div>
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
