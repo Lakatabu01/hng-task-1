@@ -6,7 +6,7 @@ const date = new Date()
 const day = date.getDay()
 const daysOfTheWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 let weekday = daysOfTheWeek[day]
-dayInfo.textContent =  weekday
+dayInfo.textContent = "Day:  " + weekday
 
 }
 
@@ -15,7 +15,7 @@ getWeekday()
 const getTime = () => {
     const date = new Date()
     const time = date.getTime()
-    timeInfo.textContent =  time
+    timeInfo.textContent = "Time in UTC:  " +  time
     }
     
     getTime()
