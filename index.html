@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>frontend-page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="content">
+        <div class="wrapper">
+            <div>
+                <img
+                class="display-picture"
+                data-testid="slackDisplayImage"
+                sizes="(max-width: 1400px) 20vw, (max-width: 728px) 70vw"
+                srcset="
+                ./Assets/profile-image/profile-image_kum8r3_c_scale,w_190.jpg 190w,
+                ./Assets/profile-image/profile-image_kum8r3_c_scale,w_288.jpg 288w"
+                src="./Assets/profile-image/profile-image_kum8r3_c_scale,w_288.jpg"
+                alt="Bamgbade Olanrewaju">
+            </div>
+
+            <div class="information">
+                <div class="details">
+                    <p data-testid="slackUserName">Bamgbade Olanrewaju</p>
+                </div>
+
+                <div class="details">
+                    <p data-testid="myTrack">Frontend</p>
+                </div>
+
+                <div class="time-div">
+                    <div class="time">
+                        <p data-testid="currentDayOfTheWeek">Current day of the week:</p>
+                    </div>
+                    <div class="time">
+                        <p data-testid="currentUTCTime">Current time:</p>
+                    </div>
+                </div>
+
+                <div class="btn-div"> 
+                    <a data-testid=“githubURL” href="https://github.com/Lakatabu01/hng-task-1.git">
+                        <button>Link to github</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
